@@ -1,3 +1,4 @@
-/workspaces/Hello-programs/test/build/CMakeFiles/permutations_i.dir
-/workspaces/Hello-programs/test/build/CMakeFiles/edit_cache.dir
-/workspaces/Hello-programs/test/build/CMakeFiles/rebuild_cache.dir
+/home/tammy/Hello-programs/test/build/CMakeFiles/Mylib.dir
+/home/tammy/Hello-programs/test/build/CMakeFiles/exe.dir
+/home/tammy/Hello-programs/test/build/CMakeFiles/edit_cache.dir
+/home/tammy/Hello-programs/test/build/CMakeFiles/rebuild_cache.dir

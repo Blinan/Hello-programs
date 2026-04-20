@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMylib.a CMakeFiles/Mylib.dir/src/min_cost_climbing_stairs_dp.cpp.o
+/usr/bin/ranlib libMylib.a

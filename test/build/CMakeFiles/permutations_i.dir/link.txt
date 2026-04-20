@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/permutations_i.dir/13.2permutations_i.cc.o -o permutations_i 

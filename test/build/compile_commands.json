@@ -1,8 +1,14 @@
 [
 {
-  "directory": "/workspaces/Hello-programs/test/build",
-  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/permutations_i.dir/13.2permutations_i.cc.o -c /workspaces/Hello-programs/test/13.2permutations_i.cc",
-  "file": "/workspaces/Hello-programs/test/13.2permutations_i.cc",
-  "output": "CMakeFiles/permutations_i.dir/13.2permutations_i.cc.o"
+  "directory": "/home/tammy/Hello-programs/test/build",
+  "command": "/usr/bin/g++  -I/home/tammy/Hello-programs/test/ins -g -std=gnu++11 -o CMakeFiles/Mylib.dir/src/min_cost_climbing_stairs_dp.cpp.o -c /home/tammy/Hello-programs/test/src/min_cost_climbing_stairs_dp.cpp",
+  "file": "/home/tammy/Hello-programs/test/src/min_cost_climbing_stairs_dp.cpp",
+  "output": "CMakeFiles/Mylib.dir/src/min_cost_climbing_stairs_dp.cpp.o"
+},
+{
+  "directory": "/home/tammy/Hello-programs/test/build",
+  "command": "/usr/bin/g++  -I/home/tammy/Hello-programs/test/ins -g -std=gnu++11 -o CMakeFiles/exe.dir/main.cc.o -c /home/tammy/Hello-programs/test/main.cc",
+  "file": "/home/tammy/Hello-programs/test/main.cc",
+  "output": "CMakeFiles/exe.dir/main.cc.o"
 }
 ]

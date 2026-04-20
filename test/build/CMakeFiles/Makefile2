@@ -54,16 +54,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/Hello-programs/test
+CMAKE_SOURCE_DIR = /home/tammy/Hello-programs/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/Hello-programs/test/build
+CMAKE_BINARY_DIR = /home/tammy/Hello-programs/test/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/permutations_i.dir/all
+all: CMakeFiles/Mylib.dir/all
+all: CMakeFiles/exe.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/permutations_i.dir/clean
+clean: CMakeFiles/Mylib.dir/clean
+clean: CMakeFiles/exe.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/permutations_i.dir
+# Target rules for target CMakeFiles/Mylib.dir
 
 # All Build rule for target.
-CMakeFiles/permutations_i.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/permutations_i.dir/build.make CMakeFiles/permutations_i.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/permutations_i.dir/build.make CMakeFiles/permutations_i.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/Hello-programs/test/build/CMakeFiles --progress-num=1,2 "Built target permutations_i"
-.PHONY : CMakeFiles/permutations_i.dir/all
+CMakeFiles/Mylib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tammy/Hello-programs/test/build/CMakeFiles --progress-num=1,2 "Built target Mylib"
+.PHONY : CMakeFiles/Mylib.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/permutations_i.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Hello-programs/test/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/permutations_i.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Hello-programs/test/build/CMakeFiles 0
-.PHONY : CMakeFiles/permutations_i.dir/rule
+CMakeFiles/Mylib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tammy/Hello-programs/test/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Mylib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tammy/Hello-programs/test/build/CMakeFiles 0
+.PHONY : CMakeFiles/Mylib.dir/rule
 
 # Convenience name for target.
-permutations_i: CMakeFiles/permutations_i.dir/rule
-.PHONY : permutations_i
+Mylib: CMakeFiles/Mylib.dir/rule
+.PHONY : Mylib
 
 # clean rule for target.
-CMakeFiles/permutations_i.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/permutations_i.dir/build.make CMakeFiles/permutations_i.dir/clean
-.PHONY : CMakeFiles/permutations_i.dir/clean
+CMakeFiles/Mylib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/clean
+.PHONY : CMakeFiles/Mylib.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/exe.dir
+
+# All Build rule for target.
+CMakeFiles/exe.dir/all: CMakeFiles/Mylib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tammy/Hello-programs/test/build/CMakeFiles --progress-num=3,4 "Built target exe"
+.PHONY : CMakeFiles/exe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tammy/Hello-programs/test/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tammy/Hello-programs/test/build/CMakeFiles 0
+.PHONY : CMakeFiles/exe.dir/rule
+
+# Convenience name for target.
+exe: CMakeFiles/exe.dir/rule
+.PHONY : exe
+
+# clean rule for target.
+CMakeFiles/exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/clean
+.PHONY : CMakeFiles/exe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

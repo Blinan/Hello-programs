@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/Hello-programs/test
+CMAKE_SOURCE_DIR = /home/tammy/Hello-programs/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/Hello-programs/test/build
+CMAKE_BINARY_DIR = /home/tammy/Hello-programs/test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Hello-programs/test/build/CMakeFiles /workspaces/Hello-programs/test/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tammy/Hello-programs/test/build/CMakeFiles /home/tammy/Hello-programs/test/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Hello-programs/test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tammy/Hello-programs/test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named permutations_i
+# Target rules for targets named Mylib
 
 # Build rule for target.
-permutations_i: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 permutations_i
-.PHONY : permutations_i
+Mylib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mylib
+.PHONY : Mylib
 
 # fast build rule for target.
-permutations_i/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/permutations_i.dir/build.make CMakeFiles/permutations_i.dir/build
-.PHONY : permutations_i/fast
+Mylib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/build
+.PHONY : Mylib/fast
 
-13.2permutations_i.o: 13.2permutations_i.cc.o
-.PHONY : 13.2permutations_i.o
+#=============================================================================
+# Target rules for targets named exe
+
+# Build rule for target.
+exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exe
+.PHONY : exe
+
+# fast build rule for target.
+exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/build
+.PHONY : exe/fast
+
+main.o: main.cc.o
+.PHONY : main.o
 
 # target to build an object file
-13.2permutations_i.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/permutations_i.dir/build.make CMakeFiles/permutations_i.dir/13.2permutations_i.cc.o
-.PHONY : 13.2permutations_i.cc.o
+main.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/main.cc.o
+.PHONY : main.cc.o
 
-13.2permutations_i.i: 13.2permutations_i.cc.i
-.PHONY : 13.2permutations_i.i
+main.i: main.cc.i
+.PHONY : main.i
 
 # target to preprocess a source file
-13.2permutations_i.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/permutations_i.dir/build.make CMakeFiles/permutations_i.dir/13.2permutations_i.cc.i
-.PHONY : 13.2permutations_i.cc.i
+main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/main.cc.i
+.PHONY : main.cc.i
 
-13.2permutations_i.s: 13.2permutations_i.cc.s
-.PHONY : 13.2permutations_i.s
+main.s: main.cc.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-13.2permutations_i.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/permutations_i.dir/build.make CMakeFiles/permutations_i.dir/13.2permutations_i.cc.s
-.PHONY : 13.2permutations_i.cc.s
+main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/main.cc.s
+.PHONY : main.cc.s
+
+src/min_cost_climbing_stairs_dp.o: src/min_cost_climbing_stairs_dp.cpp.o
+.PHONY : src/min_cost_climbing_stairs_dp.o
+
+# target to build an object file
+src/min_cost_climbing_stairs_dp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/src/min_cost_climbing_stairs_dp.cpp.o
+.PHONY : src/min_cost_climbing_stairs_dp.cpp.o
+
+src/min_cost_climbing_stairs_dp.i: src/min_cost_climbing_stairs_dp.cpp.i
+.PHONY : src/min_cost_climbing_stairs_dp.i
+
+# target to preprocess a source file
+src/min_cost_climbing_stairs_dp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/src/min_cost_climbing_stairs_dp.cpp.i
+.PHONY : src/min_cost_climbing_stairs_dp.cpp.i
+
+src/min_cost_climbing_stairs_dp.s: src/min_cost_climbing_stairs_dp.cpp.s
+.PHONY : src/min_cost_climbing_stairs_dp.s
+
+# target to generate assembly for a file
+src/min_cost_climbing_stairs_dp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/src/min_cost_climbing_stairs_dp.cpp.s
+.PHONY : src/min_cost_climbing_stairs_dp.cpp.s
 
 # Help Target
 help:
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... permutations_i"
-	@echo "... 13.2permutations_i.o"
-	@echo "... 13.2permutations_i.i"
-	@echo "... 13.2permutations_i.s"
+	@echo "... Mylib"
+	@echo "... exe"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/min_cost_climbing_stairs_dp.o"
+	@echo "... src/min_cost_climbing_stairs_dp.i"
+	@echo "... src/min_cost_climbing_stairs_dp.s"
 .PHONY : help
 
 
